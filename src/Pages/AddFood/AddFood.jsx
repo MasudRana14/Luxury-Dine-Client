@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { AuthContext } from "../Providers/AuthProvider";
-
+import Swal from 'sweetalert2'
 
 const AddFood = () => {
 
@@ -21,7 +21,28 @@ const AddFood = () => {
         const description = form.description.value;
 
         const addFood = {name,photo,category,quantity,price,addby,origin,description};
-        console.log(addFood)
+        
+        // Send data to the server 
+        fetch('http://localhost:5000/foods', {
+            method:'POST',
+            headers:{
+                'content-type': 'application/json'
+            },
+            body:JSON.stringify(addFood)
+        })
+        .then(res => res.json())
+        .then(data =>{
+           if(data.insertedId){
+            Swal.fire({
+                title: 'Success!',
+                text: 'Food Added Successfully',
+                icon: 'success',
+                confirmButtonText: 'OK'
+              })
+           }
+        })
+
+
     }
 
 

@@ -4,10 +4,10 @@ const Banner = () => {
 
 
     return (
-        <div>
+        <div className="mt-3">
 
 
-            <section className="bg-center bg-no-repeat bg-cover  bg-[url('https://i.ibb.co/Hzby4WQ/banner.jpg')] bg-gray-400 h-[500px] bg-blend-multiply">
+            <section className="bg-center bg-no-repeat bg-cover  bg-[url('https://i.ibb.co/Hzby4WQ/banner.jpg')] bg-gray-400 h-[550px] bg-blend-multiply rounded-lg">
                 <div className="px-4 mx-auto max-w-screen-xl text-center py-24">
                    
                     <h1 className="mb-4 text-4xl font-bold tracking-tight leading-none text-white md:text-5xl lg:text-5xl opacity-90 ">Luxury Dine Restaurant</h1>

@@ -11,7 +11,8 @@ const Home = () => {
                <Banner></Banner>
             </div>
             
-            <h1 className="text-center text-3xl font-bold mt-10 underline">Top Selling Food </h1>
+            <h1 className="text-center text-3xl font-bold mt-10 ">Top Selling Food </h1>
+            <p className="border-2 border-b-yellow-700 w-1/6 mx-auto"></p>
 
                 <section>
                     <OurChef></OurChef>

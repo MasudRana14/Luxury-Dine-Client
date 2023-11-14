@@ -11,7 +11,8 @@ const Details = () => {
     return (
         <div className="mt-10">
 
-            <h1 className="text-center text-3xl font-bold underline"><span className="text-pink-600">Our All</span> <span className="text-yellow-700">Foods Items</span></h1>
+            <h1 className="text-center text-3xl font-bold"><span className="text-pink-600">Our All</span> <span className="text-yellow-700">Foods Items</span></h1>
+            <p className="border-2 border-b-yellow-700 w-1/6 mx-auto"></p>
           
 
             <div className="mt-10 mb-10 bg-green-100 py-10 ">

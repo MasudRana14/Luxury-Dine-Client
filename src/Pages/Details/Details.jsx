@@ -1,5 +1,5 @@
 // import { useState } from "react";
-import { Link, useLoaderData } from "react-router-dom";
+import {  useLoaderData } from "react-router-dom";
 
 
 const Details = () => {
@@ -40,7 +40,7 @@ const Details = () => {
 
                         <p className="block mb-2 font-sans text-xl antialiased font-semibold leading-snug">
                            <span>Price: </span>
-                           {price}
+                           {price} $
                         </p>
 
                         <p className="block mb-2 font-sans text-xl antialiased font-semibold leading-snug">

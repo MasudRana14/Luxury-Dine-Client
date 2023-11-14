@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-
+import PropTypes from 'prop-types'; 
 
 const FoodsCard = ({ foods }) => {
 
@@ -40,5 +40,9 @@ const FoodsCard = ({ foods }) => {
         </div>
     );
 };
+
+FoodsCard.propTypes = {
+foods:PropTypes.object
+}
 
 export default FoodsCard;

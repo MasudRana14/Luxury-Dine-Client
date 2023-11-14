@@ -1,12 +1,13 @@
 import Marquee from "react-fast-marquee";
 
 const OurChef = () => {
+
     return (
         <div>
 
-                <section className="mt-10">
+                <section className="mt-16">
 
-                    <h2 className="text-center font-bold text-3xl">Our Best Chefs</h2>
+                    <h2 className="text-center font-bold text-3xl text-yellow-700">Our Best <span className="text-pink-600">Chefs</span></h2>
                     <p className="border-2 border-b-yellow-700 w-1/6 mx-auto"></p>
 
                     <Marquee speed={14}>

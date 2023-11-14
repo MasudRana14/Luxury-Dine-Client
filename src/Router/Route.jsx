@@ -27,7 +27,7 @@ const myRoute = createBrowserRouter([
             },
             {
                 path: "/addfood",
-                element: <AddFood></AddFood>
+                element: <PrivateRoute><AddFood></AddFood></PrivateRoute>
             },
             {
                 path:"/allfood",
@@ -35,11 +35,11 @@ const myRoute = createBrowserRouter([
             },
             {
                 path:"/blog",
-                element:<Blog></Blog>
+                element:<PrivateRoute><Blog></Blog></PrivateRoute>
             },
             {
                 path:"/contact",
-                element:<Contact></Contact>
+                element:<PrivateRoute><Contact></Contact></PrivateRoute>
             },
             {
                 path: "/login",

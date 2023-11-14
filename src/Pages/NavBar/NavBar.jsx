@@ -51,14 +51,17 @@ const NavBar = () => {
 
         {/* Add Food */}
 
-        <NavLink
-            to="/addfood"
-            className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "text-yellow-700 underline" : ""
-            }
-        >
-            <p className="font-bold">Add Food</p>
-        </NavLink>
+       {
+       user&&
+         <NavLink
+         to="/addfood"
+         className={({ isActive, isPending }) =>
+             isPending ? "pending" : isActive ? "text-yellow-700 underline" : ""
+         }
+     >
+         <p className="font-bold">Add Food</p>
+     </NavLink>
+       }
 
         {/* About Us  */}
         <NavLink
@@ -127,8 +130,8 @@ const NavBar = () => {
                         </ul>
                     </div>
                     <div className=" flex items-center gap-3">
-                        <img className="w-16" src="https://i.ibb.co/4jmn4hF/Chef-logo-vector-PNG-1.png" alt="" />
-                        <h1 className="text-xl lg:text-2xl md:text-2xl font-bold text-yellow-700 ">Luxury<span className="text-pink-500"> Dine</span></h1>
+                        <img className="w-9 md:w-16" src="https://i.ibb.co/4jmn4hF/Chef-logo-vector-PNG-1.png" alt="" />
+                        <h1 className="text-sm lg:text-2xl md:text-2xl font-bold text-yellow-700 ">Luxury<span className="text-pink-500"> Dine</span></h1>
                     </div>
                 </div>
                 <div className="navbar-center hidden lg:flex ">
@@ -141,7 +144,7 @@ const NavBar = () => {
 
 
                     {
-                        user && <div className="flex items-center gap-2 text-xs">
+                        user && <div className="flex items-center gap-2 text-xs ">
 
                             <div>
                                 <h2 className="font-medium text-center">{user?.displayName

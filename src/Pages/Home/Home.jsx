@@ -3,6 +3,7 @@ import { Link, useLoaderData } from "react-router-dom";
 import OurChef from "../OurChef/OurChef";
 import Banner from "./Banner/Banner";
 import HomeCard from "./HomeCard/HomeCard";
+import AboutUs from "../AboutUs/AboutUs";
 
 
 
@@ -41,6 +42,12 @@ const Home = () => {
                 <OurChef></OurChef>
             </section>
 
+
+            {/* About Us  */}
+
+            <section>
+                    <AboutUs></AboutUs>
+            </section>
         </div>
     );
 };

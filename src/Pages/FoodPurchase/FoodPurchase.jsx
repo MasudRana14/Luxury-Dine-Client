@@ -10,7 +10,7 @@ const FoodPurchase = () => {
             </div>
 
 
-            <div className="w-2/3 mx-auto mt-10 mb-10">
+            <div className="w-2/3 mx-auto mt-10 mb-10 bg-green-100 p-10">
 
                 <form >
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -58,7 +58,7 @@ const FoodPurchase = () => {
                     </div>
 
                     <div className="form-control mt-6">
-                        <input className="btn btn-primary" type="submit" value="Purchase" />
+                        <input className="btn btn-secondary hover:bg-yellow-600" type="submit" value="Purchase" />
                     </div>
                 </form>
             </div>

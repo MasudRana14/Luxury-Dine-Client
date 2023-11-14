@@ -54,10 +54,7 @@ const myRoute = createBrowserRouter([
                 path: "/register",
                 element: <Register></Register>
             },
-            {
-                path: "/about",
-                element: <AboutUs></AboutUs>
-            },
+           
             {
                 path:"/details/:id",
                 element:<Details></Details>,

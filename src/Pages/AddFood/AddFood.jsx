@@ -50,7 +50,7 @@ const AddFood = () => {
 
 
     return (
-        <div className="w-1/2 mx-auto mt-10 mb-10 bg-yellow-100 p-6">
+        <div className="w-1/2 mx-auto mt-10 mb-10 bg-green-100 p-6">
 
             <h1 className="text-center text-3xl font-bold mb-5 ">Add Food Items</h1>
 

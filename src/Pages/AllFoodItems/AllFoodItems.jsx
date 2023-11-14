@@ -8,7 +8,7 @@ const AllFoodItems = () => {
 
     return (
 
-        <div>
+        <div className="mt-10 mb-16">
             <h1 className="text-3xl font-bold text-center mt-3">All Food Items</h1>
             <p className="border-2 border-b-yellow-700 w-1/6 mx-auto"></p>
 

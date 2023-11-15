@@ -5,7 +5,7 @@ const AboutUs = () => {
     return (
         <div className="mt-10">
 
-            <h1 className="text-center font-bold text-3xl text-pink-600">About <span className="text-yellow-700">Us</span></h1>
+            <h1 className="text-center font-bold text-3xl text-yellow-700">About <span className="text-pink-600">Us</span></h1>
             <p className="border-2 border-b-yellow-700 w-1/12 mx-auto"></p>
 
 

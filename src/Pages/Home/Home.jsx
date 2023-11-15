@@ -4,6 +4,7 @@ import OurChef from "../OurChef/OurChef";
 import Banner from "./Banner/Banner";
 import HomeCard from "./HomeCard/HomeCard";
 import AboutUs from "../AboutUs/AboutUs";
+import SpecialOffer from "./SpecialOffer/SpecialOffer";
 
 
 
@@ -42,11 +43,18 @@ const Home = () => {
                 <OurChef></OurChef>
             </section>
 
+            {/* Our Special Offers  */}
+
+            <section>
+                    <SpecialOffer></SpecialOffer>
+            </section>
+
+
 
             {/* About Us  */}
 
             <section>
-                    <AboutUs></AboutUs>
+                <AboutUs></AboutUs>
             </section>
         </div>
     );

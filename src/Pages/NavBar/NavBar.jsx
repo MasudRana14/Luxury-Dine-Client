@@ -51,17 +51,17 @@ const NavBar = () => {
 
         {/* Add Food */}
 
-       {
-       user&&
-         <NavLink
-         to="/addfood"
-         className={({ isActive, isPending }) =>
-             isPending ? "pending" : isActive ? "text-yellow-700 underline" : ""
-         }
-     >
-         <p className="font-bold">Add Food</p>
-     </NavLink>
-       }
+        {
+            user &&
+            <NavLink
+                to="/addfood"
+                className={({ isActive, isPending }) =>
+                    isPending ? "pending" : isActive ? "text-yellow-700 underline" : ""
+                }
+            >
+                <p className="font-bold">Add Food</p>
+            </NavLink>
+        }
 
         {/* Contact  */}
         <NavLink
@@ -145,16 +145,39 @@ const NavBar = () => {
                                 </h2>
                             </div>
 
-                            <div className="avatar">
-                                <div className="w-9 rounded-full">
 
-                                    <img src={user?.photoURL} />
+                            <div className="dropdown dropdown-end">
+                                <label tabIndex={0} className="btn px-0 py-0 "> <div className="avatar">
+                                    <div className="w-9 rounded-full">
+
+                                        <img src={user?.photoURL} />
+
+                                    </div>
+
+
 
                                 </div>
-
+                                </label>
+                                <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+                                    <NavLink
+                                        to="/addfood"
+                                        className={({ isActive, isPending }) =>
+                                            isPending ? "pending" : isActive ? "text-yellow-700 " : ""
+                                        }
+                                    >
+                                        <p className="font-bold">Add Food</p>
+                                    </NavLink>
+                                    
+                                    <NavLink
+                                        to="/"
+                                        className={({ isActive, isPending }) =>
+                                            isPending ? "pending" : isActive ? "text-yellow-700 " : ""
+                                        }
+                                    >
+                                        <p className="font-bold">My Order Food</p>
+                                    </NavLink>
+                                </ul>
                             </div>
-
-
 
                         </div>
 

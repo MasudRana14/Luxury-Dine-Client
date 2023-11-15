@@ -7,9 +7,9 @@ const Details = () => {
     const details = useLoaderData();
     const { _id, name, photo, category, description, price, addby, origin } = details;
     
-    const handleOrder = (id)=>{
+   
         
-    }
+    
 
     return (
         <div className="mt-10">
@@ -61,7 +61,7 @@ const Details = () => {
                         </p>
                         <div>
                             <Link to={`/purchase/${_id}`}>
-                                <button onClick={()=> handleOrder(_id)} className="btn btn-sm bg-yellow-500 hover:bg-pink-400 font-bold">Order Now</button>
+                                <button  className="btn btn-sm bg-yellow-500 hover:bg-pink-400 font-bold">Order Now</button>
 
                             </Link>
                         </div>

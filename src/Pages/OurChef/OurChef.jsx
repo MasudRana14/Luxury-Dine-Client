@@ -24,6 +24,7 @@ const OurChef = () => {
                                         MASON ROBINSON
                                     </p>
                                     <p className="text-white">CHEF</p>
+                                    <p className="text-white">Experience: 5 Years</p>
                                 </div>
                             </div>
 
@@ -38,6 +39,7 @@ const OurChef = () => {
                                     SOPHIE WHITE
                                     </p>
                                     <p className="text-white">COOK</p>
+                                    <p className="text-white">Experience: 7 Years</p>
                                 </div>
                             </div>
 
@@ -52,6 +54,7 @@ const OurChef = () => {
                                    THOMAS WILSON
                                     </p>
                                     <p className="text-white">SOUS CHEF</p>
+                                    <p className="text-white">Experience: 10 Years</p>
                                 </div>
                             </div>
 
@@ -66,6 +69,7 @@ const OurChef = () => {
                                   DALLAS KIM
                                     </p>
                                     <p className="text-white">PASTRY CHEF</p>
+                                    <p className="text-white">Experience: 8 Years</p>
                                 </div>
                             </div>
                             
@@ -80,6 +84,7 @@ const OurChef = () => {
                                     SHERMAN LEONARD
                                     </p>
                                     <p className="text-white">COOK</p>
+                                    <p className="text-white">Experience: 3 Years</p>
                                 </div>
                             </div>
 

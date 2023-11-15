@@ -1,12 +1,15 @@
-// import { useState } from "react";
+
 import { Link, useLoaderData } from "react-router-dom";
 
 
 const Details = () => {
-    // const [show, setShow] = useState([]);
+    
     const details = useLoaderData();
-    const { name, photo, category, description, price, addby, origin } = details;
-
+    const { _id, name, photo, category, description, price, addby, origin } = details;
+    
+    const handleOrder = (id)=>{
+        
+    }
 
     return (
         <div className="mt-10">
@@ -57,8 +60,8 @@ const Details = () => {
                             {description}
                         </p>
                         <div>
-                            <Link to="/purchase">
-                                <button className="btn btn-sm bg-yellow-500 hover:bg-pink-400 font-bold">Order Now</button>
+                            <Link to={`/purchase/${_id}`}>
+                                <button onClick={()=> handleOrder(_id)} className="btn btn-sm bg-yellow-500 hover:bg-pink-400 font-bold">Order Now</button>
 
                             </Link>
                         </div>

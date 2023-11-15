@@ -4,7 +4,6 @@ import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 import Home from "../Pages/Home/Home";
 import Login from "../Pages/Login/Login";
 import Register from "../Pages/Register/Register";
-import AboutUs from "../Pages/AboutUs/AboutUs";
 import AddFood from "../Pages/AddFood/AddFood";
 import AllFoodItems from "../Pages/AllFoodItems/AllFoodItems";
 import Blog from "../Pages/Blog/Blog";
@@ -27,24 +26,24 @@ const myRoute = createBrowserRouter([
             {
                 path: "/",
                 element: <Home></Home>,
-                loader:()=> fetch('http://localhost:5000/foods')
+                loader: () => fetch('http://localhost:5000/foods')
             },
             {
                 path: "/addfood",
                 element: <PrivateRoute><AddFood></AddFood></PrivateRoute>
             },
             {
-                path:"/allfood",
-                element:<PrivateRoute><AllFoodItems></AllFoodItems></PrivateRoute>,
-                loader:()=> fetch('http://localhost:5000/foods')
+                path: "/allfood",
+                element: <AllFoodItems></AllFoodItems>,
+                loader: () => fetch('http://localhost:5000/foods')
             },
             {
-                path:"/blog",
-                element:<PrivateRoute><Blog></Blog></PrivateRoute>
+                path: "/blog",
+                element: <PrivateRoute><Blog></Blog></PrivateRoute>
             },
             {
-                path:"/contact",
-                element:<PrivateRoute><Contact></Contact></PrivateRoute>
+                path: "/contact",
+                element: <PrivateRoute><Contact></Contact></PrivateRoute>
             },
             {
                 path: "/login",
@@ -54,19 +53,24 @@ const myRoute = createBrowserRouter([
                 path: "/register",
                 element: <Register></Register>
             },
-           
             {
-                path:"/details/:id",
-                element:<Details></Details>,
-                loader:({params})=>fetch(`http://localhost:5000/foods/${params.id}`)
+                path: "/purchase/:id",
+                element: <PrivateRoute><FoodPurchase></FoodPurchase></PrivateRoute>,
+                loader: ({ params }) => fetch(`http://localhost:5000/foods/${params.id}`)
+                
             },
             {
-                path:"/ourchef",
-                element:<OurChef></OurChef>
+                path: "/details/:id",
+                element: <Details></Details>,
+                loader: ({ params }) => fetch(`http://localhost:5000/foods/${params.id}`)
             },
             {
-                path:"/purchase",
-                element:<FoodPurchase></FoodPurchase>
+                path: "/ourchef",
+                element: <OurChef></OurChef>
+            },
+            {
+                path: "/purchase",
+                element: <FoodPurchase></FoodPurchase>
             }
 
         ]

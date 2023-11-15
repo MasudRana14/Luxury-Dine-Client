@@ -33,7 +33,7 @@ const Home = () => {
                     }
                 </div>
                 <div className="text-center mt-6">
-                    <Link to="/allfood"> <button className=" btn rounded-lg px-6 btn-sm bg-pink-400 hover:bg-yellow-400 font-bold">Details</button></Link>
+                    <Link to="/allfood"> <button className=" btn rounded-lg px-6 btn-sm bg-pink-400 hover:bg-yellow-400 font-bold">See All</button></Link>
                 </div>
             </section>
 

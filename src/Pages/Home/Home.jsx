@@ -14,7 +14,7 @@ const Home = () => {
     const topFood = useLoaderData();
 
     const foodItem = topFood.slice(12)
-    console.log(foodItem)
+   
 
     return (
         <div>
@@ -45,9 +45,11 @@ const Home = () => {
 
             {/* Our Special Offers  */}
 
-            <section>
+           <div>
+           <section>
                     <SpecialOffer></SpecialOffer>
             </section>
+           </div>
 
 
 

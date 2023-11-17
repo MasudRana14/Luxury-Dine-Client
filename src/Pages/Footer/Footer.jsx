@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 
+
 const Footer = () => {
 
 
@@ -18,30 +19,33 @@ const Footer = () => {
                     </div>
                     <div className="grid grid-cols-2 text-sm gap-x-3 gap-y-8 lg:w-2/3 sm:grid-cols-4">
                         <div className="space-y-3">
-                            <h3 className="tracki uppercase dark:text-gray-50 underline">Product</h3>
+                            <h3 className="tracki uppercase dark:text-gray-50 underline">Contact</h3>
                             <ul className="space-y-1">
                                 <li>
-                                    <a rel="noopener noreferrer" href="#">Features</a>
+                                    <a rel="noopener noreferrer" href="#">+880 179 353 63 26</a>
                                 </li>
                                 <li>
-                                    <a rel="noopener noreferrer" href="#">Integrations</a>
+                                    <a rel="noopener noreferrer" href="#">+880 196 353 57 35</a>
                                 </li>
                                 <li>
-                                    <a rel="noopener noreferrer" href="#">Pricing</a>
+                                    <a rel="noopener noreferrer" href="#">luxurydine@gmail.com</a>
                                 </li>
                                 <li>
-                                    <a rel="noopener noreferrer" href="#">FAQ</a>
+                                    <a rel="noopener noreferrer" href="#">owner@gmail.com</a>
                                 </li>
                             </ul>
                         </div>
                         <div className="space-y-3">
-                            <h3 className="tracki uppercase dark:text-gray-50 underline">Company</h3>
+                            <h3 className="tracki uppercase dark:text-gray-50 underline">Our Service</h3>
                             <ul className="space-y-1">
                                 <li>
-                                    <a rel="noopener noreferrer" href="#">Privacy</a>
+                                    <a rel="noopener noreferrer" href="#">Fast Delivery</a>
                                 </li>
                                 <li>
-                                    <a rel="noopener noreferrer" href="#">Terms of Service</a>
+                                    <a rel="noopener noreferrer" href="#">Easy Payments</a>
+                                </li>
+                                <li>
+                                    <a rel="noopener noreferrer" href="#">24 x 7 Service</a>
                                 </li>
                             </ul>
                         </div>
@@ -51,14 +55,12 @@ const Footer = () => {
                                 <li>
                                    <Link to="/">Home</Link>
                                 </li>
-                                <li>
-                                <Link to="/about">About Us</Link>
-                                </li>
+                                
                                 <li>
                                 <Link to="/Blog">Blog</Link>
                                 </li>
                                 <li>
-                                <Link to="/allfooditems">All Food Items</Link>
+                                <Link to="/allfood">All Food Items</Link>
                                 </li>
                             </ul>
                         </div>

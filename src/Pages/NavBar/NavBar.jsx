@@ -1,8 +1,8 @@
 import { useContext } from "react";
 import { Link, NavLink, useNavigate } from "react-router-dom";
-
 import swal from "sweetalert";
 import { AuthContext } from "../Providers/AuthProvider";
+
 
 const NavBar = () => {
 
@@ -48,6 +48,19 @@ const NavBar = () => {
         >
             <p className="font-bold">All Food Items</p>
         </NavLink>
+
+        {/* About Us  */}
+
+        <NavLink
+            to="/about"
+            className={({ isActive, isPending }) =>
+                isPending ? "pending" : isActive ? "text-yellow-700 underline" : ""
+            }
+        >
+            <p className="font-bold">About</p>
+        </NavLink>
+
+       
 
         {/* Add Food */}
 
@@ -167,7 +180,7 @@ const NavBar = () => {
                                     >
                                         <p className="font-bold">Add Food</p>
                                     </NavLink>
-                                    
+
                                     <NavLink
                                         to="/"
                                         className={({ isActive, isPending }) =>

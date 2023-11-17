@@ -12,6 +12,8 @@ import PrivateRoute from "./PrivateRoute";
 import OurChef from "../Pages/OurChef/OurChef";
 import Details from "../Pages/Details/Details";
 import FoodPurchase from "../Pages/FoodPurchase/FoodPurchase";
+import AboutUs from "../Pages/AboutUs/AboutUs";
+
 
 
 const myRoute = createBrowserRouter([
@@ -40,6 +42,10 @@ const myRoute = createBrowserRouter([
             {
                 path: "/blog",
                 element: <PrivateRoute><Blog></Blog></PrivateRoute>
+            },
+            {
+                path:"/about",
+                element:<AboutUs></AboutUs>
             },
             {
                 path: "/contact",

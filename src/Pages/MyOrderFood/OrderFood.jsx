@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types'; 
+
 
 const OrderFood = ({ order }) => {
     const { name, photo, date, quantity, price } = order;
@@ -47,5 +49,9 @@ const OrderFood = ({ order }) => {
         </div>
     );
 };
+
+OrderFood.propTypes = {
+    order:PropTypes.object
+    }
 
 export default OrderFood;

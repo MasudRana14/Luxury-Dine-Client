@@ -27,7 +27,7 @@ const FoodPurchase = () => {
 
 
         // Send data to the server 
-        fetch('http://localhost:5000/order', {
+        fetch('https://restaurant-management-server-azure.vercel.app/order', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

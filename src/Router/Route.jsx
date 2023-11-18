@@ -29,7 +29,7 @@ const myRoute = createBrowserRouter([
             {
                 path: "/",
                 element: <Home></Home>,
-                loader: () => fetch('http://localhost:5000/foods')
+                loader: () => fetch('https://restaurant-management-server-azure.vercel.app/foods')
             },
             {
                 path: "/addfood",
@@ -38,7 +38,7 @@ const myRoute = createBrowserRouter([
             {
                 path: "/allfood",
                 element: <AllFoodItems></AllFoodItems>,
-                loader: () => fetch('http://localhost:5000/foods')
+                loader: () => fetch('https://restaurant-management-server-azure.vercel.app/foods')
             },
             {
                 path: "/blog",
@@ -51,7 +51,7 @@ const myRoute = createBrowserRouter([
             {
                 path:"/myorder",
                 element:<MyOrderFood></MyOrderFood>,
-                loader:()=> fetch('http://localhost:5000/order')
+                loader:()=> fetch('https://restaurant-management-server-azure.vercel.app/order')
             },
             {
                 path: "/contact",
@@ -68,13 +68,13 @@ const myRoute = createBrowserRouter([
             {
                 path: "/purchase/:id",
                 element: <PrivateRoute><FoodPurchase></FoodPurchase></PrivateRoute>,
-                loader: ({ params }) => fetch(`http://localhost:5000/foods/${params.id}`)
+                loader: ({ params }) => fetch(`https://restaurant-management-server-azure.vercel.app/foods/${params.id}`)
                 
             },
             {
                 path: "/details/:id",
                 element: <Details></Details>,
-                loader: ({ params }) => fetch(`http://localhost:5000/foods/${params.id}`)
+                loader: ({ params }) => fetch(`https://restaurant-management-server-azure.vercel.app/foods/${params.id}`)
             },
             {
                 path: "/ourchef",

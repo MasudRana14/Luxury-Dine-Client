@@ -13,6 +13,7 @@ import OurChef from "../Pages/OurChef/OurChef";
 import Details from "../Pages/Details/Details";
 import FoodPurchase from "../Pages/FoodPurchase/FoodPurchase";
 import AboutUs from "../Pages/AboutUs/AboutUs";
+import MyOrderFood from "../Pages/MyOrderFood/MyOrderFood";
 
 
 
@@ -46,6 +47,11 @@ const myRoute = createBrowserRouter([
             {
                 path:"/about",
                 element:<AboutUs></AboutUs>
+            },
+            {
+                path:"/myorder",
+                element:<MyOrderFood></MyOrderFood>,
+                loader:()=> fetch('http://localhost:5000/order')
             },
             {
                 path: "/contact",

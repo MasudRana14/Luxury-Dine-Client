@@ -9,7 +9,7 @@ const FoodPurchase = () => {
 
     const order = useLoaderData()
     const { user } = useContext(AuthContext)
-    const { name, price } = order;
+    const { name, price,photo } = order;
 
     const handlePurchase = e => {
         e.preventDefault()
@@ -20,8 +20,9 @@ const FoodPurchase = () => {
         const buyerName = form.buyerName.value;
         const buyerEmail = form.buyerEmail.value;
         const date = form.date.value;
+        const photo = form.photo.value;
 
-        const purchase = { name, price, quantity, buyerName, buyerEmail, date };
+        const purchase = { name, price, quantity, buyerName, buyerEmail, date,photo };
 
 
 
@@ -103,6 +104,13 @@ const FoodPurchase = () => {
                                 <span className="label-text">Buying Date</span>
                             </label>
                             <input type="date" name="date" placeholder="Buying Date" className="input input-bordered" required />
+
+                        </div>
+                        <div className="form-control">
+                            <label className="label">
+                                <span className="label-text">Food Img</span>
+                            </label>
+                            <input type="url" name="photo" defaultValue={photo} readOnly placeholder="Buying Date" className="input input-bordered" required />
 
                         </div>
 

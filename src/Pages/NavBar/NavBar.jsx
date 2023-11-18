@@ -182,12 +182,12 @@ const NavBar = () => {
                                     </NavLink>
 
                                     <NavLink
-                                        to="/"
+                                        to="/myorder"
                                         className={({ isActive, isPending }) =>
                                             isPending ? "pending" : isActive ? "text-yellow-700 " : ""
                                         }
                                     >
-                                        <p className="font-bold">My Order Food</p>
+                                        <p className="font-bold">My Order Food Item</p>
                                     </NavLink>
                                 </ul>
                             </div>
